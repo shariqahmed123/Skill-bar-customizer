@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Skill Bar Customizer</h1>
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<div class="function">
+    <div class="text-input">
+        <label for="">Skill name</label>
+        <input type="text" name="" id="skill">
+        <label for="">Rate your Skill</label>
+        <input type="text" name="" id="percentage">
+    </div>
+    <div class="color-input">
+        <label for="">Background Color</label>
+        <input type="color" name="" id="bgColor">
+        <label for="">Percentage Background Color</label>
+        <input type="color" name="" id="svgBg">
+        <label for="">Inner Shadow</label>
+        <input type="color" name="" id="innerShadowSvg">
+        <label for="">Skill line Color</label>
+        <input type="color" name="" id="skillColorLine">
+        
+        <label for="">Number color</label>
+        <input type="color" name="" id="percentageColor">
+        <label for="">Skill color</label>
+        <input type="color" name="" id="textColor">
+        <label for="">Box Shadow</label>
+        <input type="color" name="" id="mainContainerShadow">
+    </div>
+        
+    </div>
+    <button onclick="change()">Genarate</button>
+    <h3>Output</h3>
+    <div class="function-box">
+        <div class="container">
+            <div class="card">
+                <div class="box">
+                    <div class="percent">
+                        <svg class="svg">
+                            <circle class="circle" cx="70" cy="70" r="70"></circle>
+                            <circle class="circle1" cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2 class="percentValue"></h2>
+                        </div>
+                    </div>
+                    <h2 class="text"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
