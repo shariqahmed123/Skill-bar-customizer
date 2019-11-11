@@ -11,7 +11,8 @@ function change()
     let percentageColor = document.getElementById("percentageColor").value;
     let textColor = document.getElementById("textColor").value;
     let mainContainerShadow = document.getElementById("mainContainerShadow").value;
-  
+
+
 document.querySelector(".card").style.backgroundColor = bgColor;
 document.querySelector(".percent").style.backgroundColor = svgBg;
 document.querySelector(".percentValue").innerHTML = percentage + "%";
@@ -22,4 +23,11 @@ document.querySelector("svg circle:nth-child(2)").style.stroke = skillColorLine.
 document.querySelector(" svg circle:nth-child(2)").style.strokeDashoffset = `calc(440 - (440 * ${percentage}) / 100)`;
 document.querySelector("svg circle").style.stroke = innerShadowSvg;                
 document.querySelector(".card").style.boxShadow = `0 15px 35px ${mainContainerShadow}`;
+
+
+document.querySelector(".print1").classList.add("print");
+
+
+
+
 }
